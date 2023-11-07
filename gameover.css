@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+
+.gameoverpage{
+    display: flex;
+    justify-content: center;
+}
+.gameoverpage_div{
+    border:1px solid black;
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gameoverpage img{
+    height: 80px;
+    margin-top: 100px;
+    padding: 10px;
+}
+.card{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 80px;
+    border-radius: 3px;
+    
+
+}
+.avatar{
+    border: 1px solid blue;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+
+.score{
+    border: 1px solid orangered;
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+}
+
+.name_score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.button{
+    border: 1px solid orange;
+    color: white;
+    background-color: orange;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.won{
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddle Duel</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <p>Follow the creator</p>
+        <a href="https://www.instagram.com/jayavarsan/"><img src="./assets/instagram.avif" alt=""></a>
+        <a href="www.linkedin.com/in/jayavarsanr"><img src="./assets/linkdn.avif" alt=""></a>
+        <a href="https://github.com/jayavarsa"><img src="./assets/github.svg" alt=""></a>
+    </header>
+    <h1>Paddle Duel</h1>
+    <div class="elements">
+        <div class="avatar">
+            <h3>Press to select avator</h3>
+            <div class="avator_image">
+
+            </div>
+        </div>
+        <div class="input_user">
+            <input id='player_input' type="text" placeholder="Enter your name">
+            <div class="select_level">
+                <div id="level_div">
+                    <p id="level">Easy</p>
+                </div>
+                <div class="button">
+                    <button id="left_button" onclick="update_hardness('left')">
+                        <img src="./assets/left-arrow.png" alt="left arrow">
+                    </button>
+                    <button id="right_button" onclick="update_hardness('right')">
+                        <img src="./assets/right-arrow.png" alt="right arrow">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="instruction" id="instruction" onmouseover="update_instruction()" onmouseleave="update_instruction1()">
+            <img src="./assets/lighting.png" alt="">
+            <h3>Instructions</h3>
+        </div>
+    </div>
+    <div class="play_button" id="play_button">
+        <h3>Play Now</h3>
+    </div>
+
+    <div class="avator" id="logos">
+        <img onclick="update_avator(1)" src="./assets/avator-1.png" alt="" class="avators" id="1">
+        <img onclick="update_avator(2)" src="./assets/avator-2.png" alt="" class="avators" id="2">
+        <img onclick="update_avator(3)" src="./assets/avator-3.png" alt="" class="avators" id="3">
+        <img onclick="update_avator(4)" src="./assets/avator-4.png" alt="" class="avators" id="4">
+        <img onclick="update_avator(5)" src="./assets/avator-5.jpeg" alt="" class="avators" id="5">
+        <img onclick="update_avator(6)" src="./assets/avator-6.png" alt="" class="avators" id="6">
+        <img onclick="update_avator(7)" src="./assets/avator-7.jpeg" alt="" class="avators" id="7">
+        <img onclick="update_avator(8)" src="./assets/avator-8.jpeg" alt="" class="avators" id="8">
+        <img onclick="update_avator(9)" src="./assets/avator-9.png" alt="" class="avators" id="9">
+    </div>
+
+    <div class="readme" id="rules">
+        <h3>Game Controls</h3>
+        <ul>
+            <li>Control your paddle with the mouse cursor</li>
+            <li>Move the paddle top and bottom to hit the ball</li>
+
+        </ul>
+        <h3> Game Rules </h3>
+        <ul>
+            <li>The game starts with the ball in the center</li>
+            <li>You and the computer take turns hitting the ball</li>
+            <li>Each player can score a point by making the opponent miss</li>
+            <li>The first player to reach 11 points wins the game</li>
+        </ul>
+        <h2> Good Luck and Have Fun!</h2>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+header{
+  border: 1px solid red;
+  height: 20vh;
+}
+
+.gamearea{
+  background-color: #333;
+  height: 80vh
+}
+
+.paddle{
+
+  --position:50;
+
+  position: absolute;
+  background-color: white;
+  width: 1vh;
+  height: 10vh;
+  top: calc(var(--position) * 1vh );
+  /* transform: translateY(-50%); */
+
+
+}
+
+.paddle.left{
+  left: 1vw;
+  
+
+}
+
+.paddle.right{
+  right: 1vw;
+
+}
