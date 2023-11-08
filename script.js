@@ -6,10 +6,14 @@ var rigth_arrow = document.getElementById("right_button")//right button for leve
 var left_arrow = document.getElementById("left_button")//left button for levels
 var level = document.getElementById("level")
 
-var player_name = document.getElementById('player_input').value //getting the player name 
+var player_name = document.getElementById("player_input")//getting the player name 
+// var player_name_value = "";
+// player_name_va÷
 
 var instruction = document.getElementById("instruction")
 var rules = document.getElementById("rules")
+
+var mymusic = document.getElementById("homemusic")
 
 var play_button = document.getElementById("play_button")
 // event to make the avators visible 
@@ -23,7 +27,7 @@ avator.addEventListener('click',function(){
 function update_avator(n){
     avator.innerHTML = `<img src="./assets/avator-${n}.png" alt="" class="avator_inserted">`
     avator_div.style.visibility = 'hidden'
-    localStorage.setItem('avator','n'); 
+    localStorage.setItem('avator',n); 
 }
 
 // list of levels of hardness
@@ -31,7 +35,7 @@ function update_avator(n){
 l=['Easy','Medium','Hard']
 
 var hardness = 0 
-var game_level 
+var game_level = 'Easy'
 
 //function to update the level of hardness of the game 
 function update_hardness(button){
@@ -58,9 +62,10 @@ function update_hardness(button){
 
 //
 play_button.addEventListener("click",function() {
+    localStorage.setItem('name',player_name.value)
+    localStorage.setItem('level',game_level)
     window.location.href = './game.html'
-    localStorage.setItem('name',JSON.stringify(player_name))
-    localStorage.setItem('level',JSON.stringify(game_level))
+    mymusic.pause()
 })
 
 
@@ -74,3 +79,10 @@ function update_instruction1(){
     rules.style.visibility = "hidden"
     play_button.style.visibility = "visible"
 }
+
+// console.log(game_level,player_name_value)
+// mymusic.play()
+
+console.log(player_name.value)
+
+

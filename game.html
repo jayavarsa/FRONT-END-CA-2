@@ -7,25 +7,25 @@
   <link rel="stylesheet" href="game.css">
 </head>
 <body>
-  <header>
-    <div class="player">
-      <div class="image" id="image_palyer">
-        heloo
-      </div>
-      <h3>Player_name</h3>
-      <div id="score"></div>
+  <header id="head">
+    <div class="player_card">
+      <div class="player_image" id="player_image">  </div>
+      <div class="player_name" id="player_name">player name</div>
+    </div>
+    <div class="score">
+      <div class="scores" id="player_score">0</div>
+      <div class="scores" id="computer_score">0</div>
+    </div>
+    <div class="computer_card">
+      <div class="computer_name" id="computer_name">computer name </div>
+      <div class="computer_image" id="computer_image"></div>
     </div>
   </header>
-  <!-- <div class="gamearea">
-    <div class="score">
-      <div id="player_score"></div>
-      <div id="computer_score"></div>
-    </div>
+  <div class="gamearea" id="gamearea">
     <div class="ball" id="ball"></div>
     <div class="paddle left" id="player_paddle"></div>
     <div class="paddle right" id="computer_paddle"></div>
-  </div> -->
-  <canvas></canvas>
+  </div>
 </body>
 </html>
-<script src="game.js" type="module"></script>
+<script src="game.js" ></script>

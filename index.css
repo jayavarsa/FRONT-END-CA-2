@@ -124,6 +124,7 @@ h1{
     margin-top: 100px;
     margin-left: 350px;
     visibility: hidden;
+    background-color: white;
 }
 
 .avator img{
@@ -132,6 +133,11 @@ h1{
     border-radius: 50%;
 }
 
+.avator_image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
 
 .play_button{
     border: 1px solid orange;

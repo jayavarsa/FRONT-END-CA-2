@@ -72,3 +72,15 @@
 .won{
     text-align: center;
 }
+.player_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.computer_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game_over{
+}
