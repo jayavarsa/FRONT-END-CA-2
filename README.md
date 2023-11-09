@@ -6,7 +6,7 @@ Welcome to the Paddle Duel repository! This simple yet entertaining game allows 
 
 ## Table of Contents
 
-
+- [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,6 +14,10 @@ Welcome to the Paddle Duel repository! This simple yet entertaining game allows 
 - [Credits](#credits)
 - [License](#license)
 
+
+## Demo
+
+-play the game here (https://jayavarsa.github.io/FRONT-END-CA-2/)
 
 ## Features
 
