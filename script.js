@@ -1,22 +1,18 @@
-var avator = document.getElementsByClassName("avator_image")[0]
+//getting the elements from html
+var avator = document.getElementsByClassName("avator_image")[0] 
 var avator_div = document.getElementById("logos")
 var avator_images = document.getElementsByClassName("avators")
-
 var rigth_arrow = document.getElementById("right_button")//right button for levels
 var left_arrow = document.getElementById("left_button")//left button for levels
 var level = document.getElementById("level")
-
 var player_name = document.getElementById("player_input")//getting the player name 
-// var player_name_value = "";
-// player_name_va÷
-
 var instruction = document.getElementById("instruction")
 var rules = document.getElementById("rules")
-
-var mymusic = document.getElementById("homemusic")
-
 var play_button = document.getElementById("play_button")
-// event to make the avators visible 
+var audio = document.getElementById("background-music"); 
+
+
+//event to make the avator division visible 
 avator.addEventListener('click',function(){
     avator_div.style.visibility = 'visible'
 
@@ -28,12 +24,12 @@ function update_avator(n){
     avator.innerHTML = `<img src="./assets/avator-${n}.png" alt="" class="avator_inserted">`
     avator_div.style.visibility = 'hidden'
     localStorage.setItem('avator',n); 
+    audio.play();
 }
 
-// list of levels of hardness
+l=['Easy','Medium','Hard'] // list of levels of hardness
 
-l=['Easy','Medium','Hard']
-
+//initising the hardness (default to easy)
 var hardness = 0 
 var game_level = 'Easy'
 
@@ -60,29 +56,27 @@ function update_hardness(button){
     }
 }
 
-//
+//event to take to the game page 
 play_button.addEventListener("click",function() {
-    localStorage.setItem('name',player_name.value)
-    localStorage.setItem('level',game_level)
-    window.location.href = './game.html'
-    mymusic.pause()
+    localStorage.setItem('name',player_name.value) 
+    localStorage.setItem('level',game_level) //storing the player_name in the local storage
+
+    //checking whther the user enterd some name 
+    if (player_name.value !=''){
+        window.location.href = "./game.html";
+    }else{
+        alert('Please enter your name!')
+    }
 })
 
-
+//function to make the instruction visible 
 function update_instruction(){
     rules.style.visibility = "visible"
     play_button.style.visibility = "hidden"
 
 }
-
+//function to make the instruction hidden 
 function update_instruction1(){
     rules.style.visibility = "hidden"
     play_button.style.visibility = "visible"
 }
-
-// console.log(game_level,player_name_value)
-// mymusic.play()
-
-console.log(player_name.value)
-
-

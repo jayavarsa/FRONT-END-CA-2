@@ -18,7 +18,7 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
-  background-image: url("https://solihullonthemove.co.uk/wp-content/uploads/2022/12/table-tennis-banner-new-wesbite.jpg");
+  background-image: url("https://t3.ftcdn.net/jpg/03/23/88/08/360_F_323880864_TPsH5ropjEBo1ViILJmcFHJqsBzorxUB.jpg");
   border-bottom: 5px solid black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,29 +106,56 @@ header{
   width: 20vh;
   height: 18vh;
   border-radius: 50%;
+  border: none;
+  animation: glow 2s infinite;
 }
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 3px rgb(13, 0, 0), 0 0 10px var(--paddle_color), 0 0 15px var(--bg_color);
+  }
+  50% {
+      box-shadow: 0 0 20px red, 0 0 30px yellow, 0 0 20px blue;
+  }
+  100% {
+      box-shadow: 0 0 5px rgb(229, 255, 0), 0 0 10px yellow, 0 0 15px blue;
+  }
+}
+
 .player_name{
   /* border: 1px solid black; */
   width: 15vh;
   text-align:center;
-  font-size: 3vh;
+  font-size: 3vw;
   margin-right: 2px;
   height: 4vh;
+  color: white; /* Text color */
+  font-weight: 900;
 }
+
 
 .computer_image{
   border: 1px solid red;
   width: 20vh;
   height: 18vh;
   border-radius: 50%;
+  border: none;
+  animation: glow 2s infinite;
+}
+
+
+
+.glowing-image {
+  
 }
 .computer_name{
   /* border: 1px solid black; */
   width: 15vh;
   text-align:center;
-  font-size: 3vh;
+  font-size: 3vw;
   margin-left: 2px;
   height: 4vh;
+  color: white;
 }
 
 .scores{
@@ -139,7 +166,10 @@ header{
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: var(--bg_color);
+  background-color: black;
   padding: 1vh;
   font-size: 5vw;
+  font-weight: 900;
+  color: white; /* Bright red text color */
+  text-shadow: 0 0 20px var(--bg_color), 0 0 30px var(--bg_color), 0 0 40px var(--bg_color), 0 0 50px var(--bg_color), 0 0 60px var(--bg_color), 0 0 70px var(--bg_color), 0 0 80px var(--bg_color);
 }
