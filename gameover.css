@@ -17,13 +17,13 @@ body{
 
 }
 
-.gameoverpage{
+.gameoverpage{ 
     display: flex;
     justify-content: center;;
     /* margin-top: 10px; */
     align-items: center;
 }
-.gameoverpage_div{
+.gameoverpage_div{ 
     border:1px solid black;
     height: 80vh;
     width: 80vw;

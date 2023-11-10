@@ -104,24 +104,51 @@ h1:hover {
     align-items: center
 }
 .input_user input{
-    width: 300px;
-    height: 30px;
+    width: 45vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
 
 .select_level{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    
+    background-color: white;
+}
+
+#left_button{
+    background-color: #0174BE;
+    border-radius: 5px;
+}
+
+#right_button{
+    background-color: #0174BE;
+    border-radius: 5px;
+}
+
+#left_button:hover{
+    background-color: #FFC436;
+    border-radius: 1px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#right_button:hover{
+    background-color: #FFC436;
+    border-radius: 1px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 #level_div{
-    border: 1px solid black;
+    border: 1px solid gray;
     width: 210px;
     margin-right: 10px;
-    text-align: center;
-    border-radius: 15px 50px 15px 50px ;
-
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .instruction{
@@ -193,3 +220,13 @@ h1:hover {
 .readme li{
     font-weight: 500;
 }
+
+
+#press_msg{
+    /* border: 1px solid red; */
+    /* position: fixed; */
+    color: grey;
+    margin-top: 6px;
+}
+
+
